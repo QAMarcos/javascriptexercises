@@ -5,4 +5,15 @@ um exercício simples para mostrar dinheiro sempre da forma correta. Desenvolva 
 que ela receba um valor como 0.30000000000000004 e retorne R$0,30 (observe a vírgula e o ponto).
 */
 
-// Em andamento...
+
+
+const moneyCount = function (number) {
+    number = 0.30000000000000004;
+    number = number.toFixed(2)
+    number = number.toString().replace(".", ",")
+    let resultado = "R$" + number
+    return resultado
+
+}
+
+console.log(moneyCount())
