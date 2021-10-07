@@ -21,7 +21,7 @@ const compoundsFeesCalculation = function (initialValue,monthlyFees,aplicationTi
 
 let compoundAmount = initialValue * (1 + (monthlyFees / 100)) ** aplicationTime
 
-return compoundAmount.toFixed(4)
+return compoundAmount.toFixed(2)
 
 
    

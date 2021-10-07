@@ -11,7 +11,7 @@ const moneyCount = function (number) {
     number = 0.30000000000000004;
     number = number.toFixed(2)
     number = number.toString().replace(".", ",")
-    let resultado = "R$" + number
+    let resultado = "R$ " + number
     return resultado
 
 }
