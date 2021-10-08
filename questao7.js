@@ -5,19 +5,25 @@ parâmetros, “ax2”, “bx” e “c”, de tal modo que na equação: 3x² -
 que os resultados sejam iguais. Caso o delta seja negativo, retorne, ao invés do vetor, um string com a frase:
 “Delta é negativo”. */
 
-const bhaskara = function(ax2,bx,cx) {
+const bhaskara = function(a,b,c) {
 
-    let delta = bx ** 2 - (4 *  ax2 * cx)
+    let delta = bx ** 2 - (4 *  a * c)
 
     if (delta < 0){
 
-        console.log("there are no real roots")
+        console.log("Delta is negative")
     }
     else if (delta > 0) {
 
+        let root1 = (-b + Math.sqrt(delta)) / (2 * a)
+        let root2 = (-b - Math.sqrt(delta)) / (2 * a)
+        
 
-
+    } else{
+        let root = (-b) / (2 * a)
+        
     }
+    
 
 // Wait, i'm already improving the code...
 
